@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Awareness & Support</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+    <section class="landing-text">
+        <h1>Cancer Awareness & Support</h1>
+        <p>
+            Raising awareness and providing support for those fighting the battle against cancer.
+            You are not alone.
+        </p>
+    </section>
+    
+    <header class="hero">
+        <img src="banner.png" alt="Cancer Awareness Banner">
+
+    </header>
+
+    <section class="quote-rotate">
+      <p id="quote-text">
+        Cancer is a word, not a sentence.
+      </p>
+    </section>
+
+    <section class="about">
+        <h2>Why Cancer Awareness Matters</h2>
+        <p>
+            Cancer awareness helps in early detection, prevention,
+            and emotional support for patients and their families.
+            Small steps can make a big difference.
+        </p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Cancer Awareness & Support. All rights reserved.</p>
+    </footer>
+
+<script>
+    document.getElementById("quote-text").classList.add("show");
+    const quotes = [
+        "Cancer is a word, not a sentence. — John Diamond",
+        "Hope is stronger than fear.",
+        "You are stronger than you think.",
+        "Every day is a second chance.",
+        "Strength grows in moments when you think you can’t go on."
+    ];
+
+    let index = 0;
+    const quoteElement = document.getElementById("quote-text");
+
+    setInterval(() => {
+        quoteElement.classList.remove("show");
+
+        setTimeout(() => {
+            index = (index + 1) % quotes.length;
+            quoteElement.textContent = quotes[index];
+            quoteElement.classList.add("show");
+        }, 500);
+    }, 4000);
+</script>
+</body>
+</html>

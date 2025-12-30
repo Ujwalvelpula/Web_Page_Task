@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.landing-text {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.landing-text h1 {
+    color: #d63384;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.landing-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+}
+
+.contact {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d63384;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #b02a6f;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .landing-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .landing-text p {
+        font-size: 1rem;
+    }
+}
+
+.quote-rotate {
+    background-color: #f9f7f8;
+    text-align: center;
+    padding: 20px;
+}
+
+#quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: playfair display, serif;
+    color: #d63384;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#quote-text.show {
+    opacity: 1;
+}
+
